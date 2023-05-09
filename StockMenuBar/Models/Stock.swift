@@ -12,5 +12,4 @@ struct Stock: Decodable {
     let description: String
     let price: Double
     
-
 }

@@ -15,7 +15,7 @@ class StockListViewModel: ObservableObject {
     func populateStocks() async{
 
         do {
-          let stocks = try await Webservice().getStocks(url: Constants.Urls.latestStocks)
+            let stocks = try await Webservice().getStocks(url: Constants.Urls.latestStocks)
             self.stocks = stocks.map(StockViewModel.init)
         } catch {
             print(error)
@@ -30,6 +30,7 @@ struct StockViewModel {
         self.stock = stock
 
     }
+
     var symbol: String {
         stock.symbol
     }

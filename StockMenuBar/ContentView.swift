@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var vm: StockListViewModel
+
+
+    init(vm: StockListViewModel) {
+        self._vm = StateObject(wrappedValue:vm)
+    }
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+
+        Text("Hello, world!")
+            .padding()
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(vm: StockListViewModel())
     }
 }

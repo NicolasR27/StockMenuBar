@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct StockMenuBarApp: App {
+
+    @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     var body: some Scene {
         WindowGroup {
             ContentView(vm: StockListViewModel())
         }
     }
+}
+
+
+class AppDelegate: NSObject,NSApplicationDelegate,ObservableObject {
+
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        <#code#>
+    }
+
+
 }

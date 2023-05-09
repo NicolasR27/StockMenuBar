@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EA7A0292A0A2E6F00F316E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3EF371A42A09D488008F52CE /* StockMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF371A72A09D488008F52CE /* StockMenuBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMenuBarApp.swift; sourceTree = "<group>"; };
 		3EF371A92A09D488008F52CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		3EF371A62A09D488008F52CE /* StockMenuBar */ = {
 			isa = PBXGroup;
 			children = (
+				3EA7A0292A0A2E6F00F316E2 /* Info.plist */,
 				3EF371C42A0A06F7008F52CE /* Extensions */,
 				3EF371C32A09DED9008F52CE /* Utils */,
 				3EF371BE2A09DA26008F52CE /* ViewModels */,
@@ -334,6 +336,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StockMenuBar/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -361,6 +365,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StockMenuBar/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

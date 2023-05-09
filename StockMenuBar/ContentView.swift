@@ -24,12 +24,12 @@ struct ContentView: View {
                         .fontWeight(.semibold)
                     Text(stock.description)
                         .opacity(0.4)
-                        Divider()
+                    Divider()
                 }
                 Spacer()
                 Text(stock.price.formateAsCurrency())
 
-            }.task{
+            }.task {
                 await vm.populateStocks()
 
             }

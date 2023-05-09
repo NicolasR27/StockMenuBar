@@ -15,7 +15,7 @@ struct ContentView: View {
     }
 
     var body: some View {
-        VStack(alignment: .leading){
+        VStack(alignment: .leading) {
             Text("Stocks").padding()
 
             List(vm.stocks,id:\.symbol) { stock in

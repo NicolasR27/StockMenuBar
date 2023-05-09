@@ -8,7 +8,9 @@
 import Foundation
 
 struct Constants {
-    struct Urls{
-        static let latestStocks = Urls(string:"https:/"island-bramble.glitch)
+
+    struct Urls {
+        static let latestStocks = URL(string:"https://island-bramble.glitch.me/latest-stocks")!
+        
     }
 }

@@ -20,7 +20,8 @@ class Webservice {
               httResponse.statusCode == 200 else {
             throw NetWorkError.invalidResponse
         }
+        return try JSONDecoder().decode([Stock].self,from: data)
     }
-    return try jsonDecoder().decode([Stock].self,from: data)
+
 }
 

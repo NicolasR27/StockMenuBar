@@ -22,6 +22,5 @@ class Webservice {
         }
         return try JSONDecoder().decode([Stock].self,from: data)
     }
-
 }
 

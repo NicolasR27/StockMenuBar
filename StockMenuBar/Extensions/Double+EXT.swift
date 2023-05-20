@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Double{
+extension Double {
     func formateAsCurrency () -> String{
 
         let formatter = NumberFormatter()

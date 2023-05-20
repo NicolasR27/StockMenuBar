@@ -18,7 +18,6 @@ struct StockMenuBarApp: App {
     }
 }
 
-
 class AppDelegate: NSObject,NSApplicationDelegate,ObservableObject {
     private var statusItem: NSStatusItem!
     private var popover: NSPopover!
@@ -42,7 +41,7 @@ class AppDelegate: NSObject,NSApplicationDelegate,ObservableObject {
      self.popover.contentViewController = NSHostingController(rootView: ContentView(vm: self.stockListVM))
 }
     @objc func togglePopover() {
-        Task{
+        Task {
             await self.stockListVM.populateStocks()
         }
 
@@ -53,8 +52,6 @@ class AppDelegate: NSObject,NSApplicationDelegate,ObservableObject {
             } else{
                 popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.maxY)
             }
-
         }
-
     }
 }

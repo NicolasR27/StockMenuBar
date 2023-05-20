@@ -44,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EA7A02A2A0A315200F316E2 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				3EF371A92A09D488008F52CE /* ContentView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		3EF3719B2A09D488008F52CE = {
 			isa = PBXGroup;
 			children = (
@@ -69,8 +77,8 @@
 				3EF371BE2A09DA26008F52CE /* ViewModels */,
 				3EF371B92A09D513008F52CE /* Services */,
 				3EF371B62A09D4BC008F52CE /* Models */,
+				3EA7A02A2A0A315200F316E2 /* MainView */,
 				3EF371A72A09D488008F52CE /* StockMenuBarApp.swift */,
-				3EF371A92A09D488008F52CE /* ContentView.swift */,
 				3EF371AB2A09D489008F52CE /* Assets.xcassets */,
 				3EF371B02A09D489008F52CE /* StockMenuBar.entitlements */,
 				3EF371AD2A09D489008F52CE /* Preview Content */,

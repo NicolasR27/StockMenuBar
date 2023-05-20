@@ -12,8 +12,7 @@ class StockListViewModel: ObservableObject {
 
     @Published var stocks:[StockViewModel] = []
 
-    func populateStocks() async{
-
+    func populateStocks() async {
         do {
             let stocks = try await Webservice().getStocks(url: Constants.Urls.latestStocks)
             self.stocks = stocks.map(StockViewModel.init)

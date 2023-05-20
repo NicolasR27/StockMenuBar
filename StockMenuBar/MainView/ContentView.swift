@@ -21,7 +21,7 @@ struct ContentView: View {
             List(vm.stocks,id:\.symbol) { stock in
                 HStack(alignment: .center) {
                     Text(stock.symbol)
-                        .fontWeight(.semibold)
+                        .fontWeight(.heavy)
                     Text(stock.description)
                         .opacity(0.4)
                     Divider()
